@@ -46,6 +46,8 @@ ul {
     background-color: rgb(149, 38, 38);
     color: whitesmoke;
     font-size: 2em;
+    border-radius: 10px;
+    box-shadow: 10px 10px 12px rgb(215, 209, 209);
 }
 
 .home-bg-image {
@@ -67,4 +69,74 @@ ul {
     width: 405px;
     height: 251px;
     background-image: url(https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/collection-1.png);
+}
+
+
+/* ---------- CARDS ---------- */
+.pai-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    gap: 3em;
+}
+
+.card {
+    background-color: whitesmoke;
+    width: 180px;
+    height: 310px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px gray;
+}
+
+.card img {
+    width: 60%;
+    height: 150px;
+    border-radius: 12px;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+
+.card div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8em;
+}
+
+.card h1 {
+    font-size: 1.2rem;
+}
+
+.card h2 {
+    font-size: 0.9rem;
+    color: #5c5c5c;
+}
+
+.card button {
+    background-color: rgba(0, 0, 255, 0.402);
+    height: 2em;
+    border: none;
+    padding: 0.5em;
+    width: 80%;
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.footer-container {
+    background-color: #9b9393ce;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+    padding: 5em;
+}
+
+.footer-form {
+    display: flex;
+    flex-direction: column;
 }
