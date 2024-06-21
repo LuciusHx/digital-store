@@ -22,10 +22,6 @@ ul {
     padding: 1em;
 }
 
-.site-header {
-
-}
-
 .menu-list {
     display: flex;
     gap: 2em;
@@ -36,4 +32,39 @@ ul {
     text-decoration: none;
     font-weight: bold;
     font-size: 1.2em;
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-title {
+    position: absolute;
+    padding: 2em;
+    background-color: rgb(149, 38, 38);
+    color: whitesmoke;
+    font-size: 2em;
+}
+
+.home-bg-image {
+    width: 100%;
+}
+
+.promotions-title {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.promotions-images {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+}
+
+.promotions .image-item {
+    width: 405px;
+    height: 251px;
+    background-image: url(https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/collection-1.png);
 }
