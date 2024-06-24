@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root {
+    --fonte-titulos: font-family: "Cormorant Garamond", serif;
+    --cor-primaria: rgb(149, 38, 38);
+}
 
 * {
     padding: 0;
@@ -18,8 +25,12 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10em;
+    gap: 30em;
     padding: 1em;
+}
+
+.site-logo {
+    margin-right: 12em;
 }
 
 .menu-list {
@@ -32,6 +43,15 @@ ul {
     text-decoration: none;
     font-weight: bold;
     font-size: 1.2em;
+    color: var(--cor-primaria);
+}
+
+.login .menu-link {
+    background-color: var(--cor-primaria);
+    color: white;
+    padding: 0.5em 0.8em;
+    font-size: 1em;
+    border-radius: 5px;
 }
 
 #home {
@@ -42,12 +62,12 @@ ul {
 
 .home-title {
     position: absolute;
-    padding: 2em;
-    background-color: rgb(149, 38, 38);
+    padding: 1.5em 2em;
+    background-color: var(--cor-primaria);
     color: whitesmoke;
     font-size: 2em;
     border-radius: 10px;
-    box-shadow: 10px 10px 12px rgb(215, 209, 209);
+    box-shadow: 8px 8px 10px rgba(47, 46, 46, 0.471);
 }
 
 .home-bg-image {
@@ -57,6 +77,8 @@ ul {
 .promotions-title {
     text-align: center;
     margin: 40px 0;
+    font-size: 3em;
+    color: var(--cor-primaria);
 }
 
 .promotions-images {
@@ -67,8 +89,11 @@ ul {
 
 .promotions .image-item {
     width: 405px;
-    height: 251px;
-    background-image: url(https://raw.githubusercontent.com/digitalcollegebr/projeto-digital-store/main/public/collection-1.png);
+    height: 250px;
+}
+
+.image-item img {
+    border-radius: 0 12px 12px 0;
 }
 
 
@@ -77,16 +102,22 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2em;
+    margin-top: 5em;
+    padding:2em;
     gap: 3em;
 }
 
 .card {
     background-color: whitesmoke;
-    width: 180px;
+    width: 200px;
     height: 310px;
     border-radius: 10px;
     box-shadow: 4px 4px 10px gray;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
 }
 
 .card img {
@@ -116,7 +147,7 @@ ul {
 }
 
 .card button {
-    background-color: rgba(0, 0, 255, 0.402);
+    background-color: var(--cor-primaria);
     height: 2em;
     border: none;
     padding: 0.5em;
@@ -133,10 +164,22 @@ ul {
     align-items: center;
     justify-content: center;
     gap: 5em;
-    padding: 5em;
+    padding: 2em;
 }
 
 .footer-form {
     display: flex;
     flex-direction: column;
+}
+
+.footer-form-input {
+    padding: 0.3em;
+}
+
+.footer-form-btn {
+    background-color: #6a6464;
+    border: none;
+    padding: 0.3em;
+    color: #fff;
+    border-radius: 5px;
 }
